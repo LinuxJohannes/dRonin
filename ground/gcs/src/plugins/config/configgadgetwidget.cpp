@@ -99,7 +99,7 @@ void ConfigGadgetWidget::deferredLoader()
     icon->addFile(":/configgadget/images/vehicle_normal.png", QSize(), QIcon::Normal, QIcon::Off);
     icon->addFile(":/configgadget/images/vehicle_selected.png", QSize(), QIcon::Selected, QIcon::Off);
     qwd = new ConfigVehicleTypeWidget(this);
-    ftw->insertTab(ConfigGadgetWidget::aircraft, qwd, *icon, QString("Vehicle"));
+    ftw->insertTab(ConfigGadgetWidget::aircraft, qwd, *icon, QString(tr("Vehicle")));
     break;
 
         case 3:
@@ -107,7 +107,7 @@ void ConfigGadgetWidget::deferredLoader()
     icon->addFile(":/configgadget/images/input_normal.png", QSize(), QIcon::Normal, QIcon::Off);
     icon->addFile(":/configgadget/images/input_selected.png", QSize(), QIcon::Selected, QIcon::Off);
     qwd = new ConfigInputWidget(this);
-    ftw->insertTab(ConfigGadgetWidget::input, qwd, *icon, QString("Input"));
+    ftw->insertTab(ConfigGadgetWidget::input, qwd, *icon, QString(tr("Input")));
     break;
 
 	case 4:
@@ -115,7 +115,7 @@ void ConfigGadgetWidget::deferredLoader()
     icon->addFile(":/configgadget/images/output_normal.png", QSize(), QIcon::Normal, QIcon::Off);
     icon->addFile(":/configgadget/images/output_selected.png", QSize(), QIcon::Selected, QIcon::Off);
     qwd = new ConfigOutputWidget(this);
-    ftw->insertTab(ConfigGadgetWidget::output, qwd, *icon, QString("Output"));
+    ftw->insertTab(ConfigGadgetWidget::output, qwd, *icon, QString(tr("Output")));
     break;
 
 	case 5:
@@ -123,7 +123,7 @@ void ConfigGadgetWidget::deferredLoader()
     icon->addFile(":/configgadget/images/ins_normal.png", QSize(), QIcon::Normal, QIcon::Off);
     icon->addFile(":/configgadget/images/ins_selected.png", QSize(), QIcon::Selected, QIcon::Off);
     qwd = new ConfigAttitudeWidget(this);
-    ftw->insertTab(ConfigGadgetWidget::sensors, qwd, *icon, QString("Attitude"));
+    ftw->insertTab(ConfigGadgetWidget::sensors, qwd, *icon, QString(tr("Attitude")));
     break;
 
 	case 6:
@@ -131,7 +131,7 @@ void ConfigGadgetWidget::deferredLoader()
     icon->addFile(":/configgadget/images/stabilization_normal.png", QSize(), QIcon::Normal, QIcon::Off);
     icon->addFile(":/configgadget/images/stabilization_selected.png", QSize(), QIcon::Selected, QIcon::Off);
     qwd = new ConfigStabilizationWidget(this);
-    ftw->insertTab(ConfigGadgetWidget::stabilization, qwd, *icon, QString("Stabilization"));
+    ftw->insertTab(ConfigGadgetWidget::stabilization, qwd, *icon, QString(tr("Stabilization")));
     break;
 
 	case 7:
@@ -139,7 +139,7 @@ void ConfigGadgetWidget::deferredLoader()
     icon->addFile(":/configgadget/images/modules_normal.png", QSize(), QIcon::Normal, QIcon::Off);
     icon->addFile(":/configgadget/images/modules_selected.png", QSize(), QIcon::Selected, QIcon::Off);
     qwd = new ConfigModuleWidget(this);
-    ftw->insertTab(ConfigGadgetWidget::modules, qwd, *icon, QString("Modules"));
+    ftw->insertTab(ConfigGadgetWidget::modules, qwd, *icon, QString(tr("Modules")));
     break;
 
 	case 8:
@@ -147,7 +147,7 @@ void ConfigGadgetWidget::deferredLoader()
     icon->addFile(":/configgadget/images/autotune_normal.png", QSize(), QIcon::Normal, QIcon::Off);
     icon->addFile(":/configgadget/images/autotune_selected.png", QSize(), QIcon::Selected, QIcon::Off);
     qwd = new ConfigAutotuneWidget(this);
-    ftw->insertTab(ConfigGadgetWidget::autotune, qwd, *icon, QString("Autotune"));
+    ftw->insertTab(ConfigGadgetWidget::autotune, qwd, *icon, QString(tr("Autotune")));
     break;
 
 	case 9:
@@ -155,7 +155,7 @@ void ConfigGadgetWidget::deferredLoader()
     icon->addFile(":/configgadget/images/camstab_normal.png", QSize(), QIcon::Normal, QIcon::Off);
     icon->addFile(":/configgadget/images/camstab_selected.png", QSize(), QIcon::Selected, QIcon::Off);
     qwd = new ConfigCameraStabilizationWidget(this);
-    ftw->insertTab(ConfigGadgetWidget::camerastabilization, qwd, *icon, QString("Camera Stab"));
+    ftw->insertTab(ConfigGadgetWidget::camerastabilization, qwd, *icon, QString(tr("Camera Stab")));
     break;
 
 	case 10:
@@ -163,7 +163,7 @@ void ConfigGadgetWidget::deferredLoader()
     icon->addFile(":/configgadget/images/txpid_normal.png", QSize(), QIcon::Normal, QIcon::Off);
     icon->addFile(":/configgadget/images/txpid_selected.png", QSize(), QIcon::Selected, QIcon::Off);
     qwd = new ConfigTxPIDWidget(this);
-    ftw->insertTab(ConfigGadgetWidget::txpid, qwd, *icon, QString("TxPID"));
+    ftw->insertTab(ConfigGadgetWidget::txpid, qwd, *icon, QString(tr("TxPID")));
     break;
 
 	case 11:
@@ -171,7 +171,7 @@ void ConfigGadgetWidget::deferredLoader()
     icon->addFile(":/configgadget/images/osd_normal.png", QSize(), QIcon::Normal, QIcon::Off);
     icon->addFile(":/configgadget/images/osd_selected.png", QSize(), QIcon::Selected, QIcon::Off);
     qwd = new ConfigOsdWidget(this);
-    ftw->insertTab(ConfigGadgetWidget::osd, qwd, *icon, QString("OSD"));
+    ftw->insertTab(ConfigGadgetWidget::osd, qwd, *icon, QString(tr("OSD")));
     // Hide OSD if not applicable, else show
     ftw->setHidden(ConfigGadgetWidget::osd, true);
     break;
